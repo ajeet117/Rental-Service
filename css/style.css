@@ -1,0 +1,242 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+	background-color: #222222;
+	color: white;
+}
+ul li
+{
+	list-style: none;
+	
+}
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover
+{
+	text-decoration: none;
+	color: inherit;
+}
+.z-index
+{
+	z-index: 10;
+	position: relative;
+}
+.yellow-color
+{
+	color: yellow;
+}
+.border-yellow
+{
+	border-color: yellow !important;
+}
+.bg-yellow
+{
+	background-color: yellow  !important;
+}
+/* sub-header */
+.sub-header
+{
+	background-image: url(../image/lead-bg1.021b0e64.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 85vh;
+}
+.sub-header::after {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 85vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+	width: 100%;
+	z-index: 0;
+}
+/* search-form */
+.search-form
+{
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
+	color: black;
+}
+.search-form input
+{
+	flex-basis: 75%;
+}
+.search-form .time
+{
+	flex-basis: 25%;
+}
+.search-from select
+{
+	width: 75%;
+}
+.special-offer
+{
+	color: white;
+	z-index: 10;
+}
+/* bike card */
+.bike-card
+{
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border: 1px solid white;
+}
+/* footer */
+footer
+{
+	background: #000000;
+	color: white;
+}
+/* search.html */
+/* search-page */
+.search-page
+{
+	position: relative;
+	background-image: url(../image/lead-bg.f3af733e.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 35vh;
+	color: white;
+}
+.search-page::after
+{
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 35vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+	width: 100%;
+	z-index: 0;
+}
+.order-box
+{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border: 1px solid white;
+	font-size: 24px;
+}
+.line
+{
+	width: 200px;
+	height: 5px;
+	background-color: white;
+	margin-top: 25px;
+}
+/* new-search-form */
+.new-search-form
+{
+	background: white;
+	color: black;
+}
+
+/* sign-up form */
+.signup-form
+{
+	background-color: white;
+	width: 70%;
+	margin: auto;
+	color: black;
+}
+/* login form */
+.login-form
+{
+	background-color: white;
+	width: 50%;
+	margin: auto;
+	color: black;
+}
+/* client */
+/* profile */
+
+.profile-pic
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.profile-name
+{
+	cursor: pointer;
+}
+.profile-menu
+{
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	background-color: white;
+	display: none;
+	z-index: 15;
+	color: black;
+}
+
+/* profile-submenu */
+.profile-submenu
+{
+	background-image: url(../image/profile-page-header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 20vh;
+	position: relative;
+}
+.profile-submenu h2,.profile-submenu p
+{
+	color: white;
+
+}
+.profile-submenu::after
+{
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 20vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+	width: 100%;
+	z-index: 0;
+}
+.profile
+{
+	background: white;
+	padding: 1rem;
+	color: black;
+}
+/*userdetail.html*/
+
+.bike-detail,.user-details
+{
+	background-color: white;
+	color: black;
+}
+.bike-details p
+{
+	font-size: 14px;
+}
+.rent-price
+{
+	width: 245px;
+	background-color: #f3f4f6;
+}
+.rent-number p,.rent-price p
+{
+	font-size: 24px;
+}
+
+

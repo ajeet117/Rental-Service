@@ -1,0 +1,9 @@
+<script>
+    $(document).ready(function(){
+  $(".profile-name").click(function(){
+    $(".profile-menu").toggle();
+  });
+});
+</script>
+  </body>
+  </html>
