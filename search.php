@@ -2,10 +2,10 @@
 
 <!--search-page opening-->
 <div class="search-page">
-    <div class="text-center pt-lg-5 z-index">
+    <div class="text-center pt-5 z-index">
         <h2 >Search Rentals</h2>
         
-        <div class="d-flex justify-content-center ml-lg-5">
+        <div class="d-flex justify-content-center ml-md-5 ml-3">
         <div class="d-flex flex-column justify-content-center">
         <div class="order-box d-flex align-items-center justify-content-center ml-4 border-yellow">
             <i class="fa fa-search yellow-color" aria-hidden="true"></i>
@@ -93,13 +93,25 @@ while($row=mysqli_fetch_assoc($result))
 }
 }
 else
-{
-  echo "<div class='col-md-12 text-center p-3'><p> no result found </p></div>";
-}
+{?>
+  <div class='col-md-12 text-center p-3'>
+  <p> no result found </p>
+  <div class="col-md-4 offset-md-4">
+  <form action="search.php" method="post">
+      <div class="form-group m-2">
+        <label for="search" class="font-weight-bold">Search</label>
+        <input type="text" name="search" id="search" class="form-control" placeholder="Enter name of a vehicle" required>
+      </div>
+      <hr>
+      <div class="text-right">
+        <button class="btn btn-primary">Search</button>
+      </div>
+    </form>
+    </div>
+  </div>
 
-?>
 <?php 
-
+}
 ?>
       
       

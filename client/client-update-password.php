@@ -1,6 +1,6 @@
 <?php include("includes/client-header.php"); ?>
 
-<div class="page-wrapper p-5">
+<div class="page-wrapper p-md-5">
 <!--profile-submenu opening-->
 <div class="profile-submenu">
     <div class="z-index text-center pt-4">

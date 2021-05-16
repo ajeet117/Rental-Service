@@ -2,9 +2,9 @@
 
 <!--search-page opening-->
 <div class="search-page">
-    <div class="text-center pt-lg-5 z-index">
+    <div class="text-center pt-5 z-index">
         <h2 >Search Rentals</h2>
-        <div class="d-flex justify-content-center ml-lg-5">
+        <div class="d-flex justify-content-center ml-md-5 ml-2">
         <div class="d-flex flex-column justify-content-center">
         <div class="order-box d-flex align-items-center justify-content-center ml-4 border-yellow">
             <i class="fa fa-search yellow-color" aria-hidden="true"></i>
@@ -59,7 +59,7 @@ if(isset($_GET['vehicleid']))
 <!--Bike details opening-->
 <div class="bike-detail container p-4 my-4">
   <div class="row">
-    <div class="col-md-4 col-4 ">
+    <div class="col-md-4 col-12 ">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -82,7 +82,7 @@ if(isset($_GET['vehicleid']))
   </a>
 </div>
     </div>
-    <div class="col-md-8 col-8">
+    <div class="col-md-8 col-12">
       <h4><?php echo $vehicle_title ?></h4>
       <div class="row">
         <div class="col-md-6 col-6">

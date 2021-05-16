@@ -1,5 +1,5 @@
 <?php include("includes/client-header.php"); ?>
-<div class="page-wrapper p-5">
+<div class="page-wrapper p-md-5">
 <!--profile-submenu opening-->
 <div class="profile-submenu">
     <div class="z-index text-center pt-4">
@@ -47,10 +47,20 @@ while($row=mysqli_fetch_assoc($result))
         <ul>
           <li class="my-3">Pick up Date & Time:<?php echo $from_date .", " . $from_time ?></li>
           <li class="my-3">Return Date & Time:<?php echo $to_date .", " . $to_time ?></li>
+          <li class="my-3">Booking Status:<?php echo $payment ?>
         </ul>
         <div class="d-flex justify-content-end">
-        <button class="btn btn-secondary">Cancel</button>
+        <?php if($payment !== "Canceled")
+        {
+          ?>
+      
+        <a href="cancel.php?bookingid=<?php echo $booking_id ?>" style='text-decoration:none;'><button class="btn btn-danger">Cancel</button></a>
         <a href="change-booking.php?vehicleid=<?php echo $vehicle_id ?>&bookingid=<?php echo $booking_id ?>" style='text-decoration:none;'><button class="btn btn-primary ml-3">Change</button></a>
+       <?php }
+        else
+        {?>
+          <button class="btn btn-danger" type="button" disabled>Canceled</button>
+        <?php } ?>
         </div>
         </div>
       </div>

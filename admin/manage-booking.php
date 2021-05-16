@@ -95,7 +95,7 @@ while($row=mysqli_fetch_assoc($result))
     echo "<td>$to_date,$to_time</td>";
     echo "<td>$hourly_price</td>";
     echo "<td>$payment</td>";  
-    echo "<td><a href='manage-booking.php?change=$booking_id'>Change to pay</a></td>";   
+    echo "<td><a href='manage-booking.php?change=$booking_id'>Change to Booked</a></td>";   
 }                                    
 ?>
                                     </tbody>

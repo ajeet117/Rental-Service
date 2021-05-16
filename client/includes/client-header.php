@@ -39,42 +39,24 @@ else
       <div class="logo ml-3">
       <h1><a href="../index.php">Sawari</a></h1>
       </div>
-        <nav class="mr-5">
-        <ul class="navbar mr-auto mt-4">
-            <li class="nav-item">
-                <a class="nav-link active font-weight-bold" href="">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Model
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Honda</a>
-                <a class="dropdown-item" href="#">Hero</a>
-                <a class="dropdown-item" href="#">Ktm</a>
-            </li>
-            <li class="nav-item dropdown mr-lg-5">
-              <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Type
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Scooter</a>
-                <a class="dropdown-item" href="#">Off Road</a>
-                <a class="dropdown-item" href="#">Sports</a>
-            </li>
+        <nav class="mr-md-5">
+        <ul class="navbar mr-auto mt-md-4 mt-2">
             <li class="nav-item">
                <img src="image/profile.png" alt="" class="profile-pic">
                <span class="ml-3 profile-name"><?php echo $firstname."  ".$lastname ?><i class="fa fa-angle-down ml-3" aria-hidden="true"></i>
               </span>
             </li>
-            <div class="profile-menu p-3">
+            
+        </ul>
+    </nav>
+    <div class="profile-menu p-3">
+                <ul>
                 <li class="nav-item m-2"><a href="profile.php">Profile Setting</a></li>
                 <li class="nav-item m-2"><a href="client-update-password.php">Update Password</a></li>
                 <li class="nav-item m-2"><a href="my-booking.php">My Bookings</a></li>
                 <li class="nav-item m-2"><a href="client-logout.php">Logout</a></li>
+                </ul>
             </div>
-        </ul>
-    </nav>
 </div>
 </header>
 <!--header closing-->

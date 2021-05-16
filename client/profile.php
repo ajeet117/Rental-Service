@@ -1,11 +1,11 @@
 <?php include("includes/client-header.php"); ?>
-<div class="page-wrapper p-5">
+<div class="page-wrapper p-md-5">
 <!--profile-submenu opening-->
 <div class="profile-submenu">
     <div class="z-index text-center pt-4">
     <h2>Your Profile</h2>
     <p>Home > Profile</p>
-</div>
+    </div>
 <!--profile-submenu closing-->
 <!--profile opening-->
 <div class="profile mt-5">

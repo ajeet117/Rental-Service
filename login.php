@@ -57,6 +57,7 @@
 			$db_password=$row['user_password'];
 			$db_email=$row['email'];
       		$db_phone=$row['phone'];
+			$db_liscence_no=$row['liscence_no'];
 		}
 		if(empty($username) && empty($password))
 		{
@@ -72,7 +73,8 @@
 			$_SESSION['lastname']=$db_lastname;
 			$_SESSION['email']=$db_email;
 			$_SESSION['phone']=$db_phone;
-			header("Location:client/profile.php");
+			$_SESSION['liscence_no']=$db_liscence_no;
+			header("location:index.php");
 		}
 		else
 		{

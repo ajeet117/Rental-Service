@@ -7,7 +7,7 @@
       <form action="search.php" method="post">
       <div class="form-group m-2">
         <label for="search" class="font-weight-bold">Search</label>
-        <input type="text" name="search" id="search" class="form-control" placeholder="Enter name of a vehicle">
+        <input type="text" name="search" id="search" class="form-control" placeholder="Enter name of a vehicle" required>
       </div>
       <hr>
       <div class="text-right">
@@ -32,7 +32,7 @@
   <?php 
                                     $query="SELECT tb_vehicle.*,tb_brand.brand_name,tb_vehicle_type.vehicle_type FROM tb_vehicle ";
                                     $query.="INNER JOIN tb_brand ON tb_brand.brand_id=tb_vehicle.brand_id ";
-                                    $query.="INNER JOIN tb_vehicle_type ON tb_vehicle_type.vehicle_type_id=tb_vehicle.vehicle_type_id LIMIT 3";
+                                    $query.="INNER JOIN tb_vehicle_type ON tb_vehicle_type.vehicle_type_id=tb_vehicle.vehicle_type_id  ORDER BY tb_vehicle.vehicle_id DESC Limit 3";
                                     $result=mysqli_query($connection,$query);
                                     if(!$result)
                                     {
